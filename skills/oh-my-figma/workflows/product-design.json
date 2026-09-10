@@ -1,0 +1,295 @@
+{
+  "version": 1,
+  "id": "product-design",
+  "execution": "host-agent",
+  "surfaces": [
+    "landing",
+    "web",
+    "ios",
+    "android",
+    "macos",
+    "windows",
+    "os"
+  ],
+  "nodes": [
+    {
+      "id": "discover",
+      "title": "Inspect host capabilities and existing file",
+      "dependsOn": [],
+      "reference": "references/integrations.md",
+      "checks": [
+        "route-recorded",
+        "target-inspected",
+        "capabilities-recorded"
+      ],
+      "kind": "document"
+    },
+    {
+      "id": "dependencies",
+      "title": "Refresh and read current third-party skills",
+      "dependsOn": [
+        "discover"
+      ],
+      "reference": "references/dependencies.md",
+      "checks": [
+        "freshness-verified",
+        "current-instructions-read"
+      ],
+      "kind": "dependency"
+    },
+    {
+      "id": "brief",
+      "title": "Define product and screen/state inventory",
+      "dependsOn": [
+        "dependencies"
+      ],
+      "reference": "references/platforms.md",
+      "checks": [
+        "scope-recorded",
+        "inventory-complete"
+      ],
+      "kind": "document"
+    },
+    {
+      "id": "direction",
+      "title": "Choose coherent visual direction",
+      "dependsOn": [
+        "brief"
+      ],
+      "reference": "references/design-method.md",
+      "checks": [
+        "identity-preserved-or-defined",
+        "direction-recorded"
+      ],
+      "kind": "document"
+    },
+    {
+      "id": "structure",
+      "title": "Organize selected Figma pages",
+      "dependsOn": [
+        "direction"
+      ],
+      "reference": "references/file-organization.md",
+      "checks": [
+        "page-order-verified",
+        "existing-work-preserved"
+      ],
+      "kind": "figma"
+    },
+    {
+      "id": "foundations",
+      "title": "Create or reuse semantic foundations",
+      "dependsOn": [
+        "structure"
+      ],
+      "reference": "references/design-method.md",
+      "checks": [
+        "tokens-verified",
+        "fonts-verified"
+      ],
+      "kind": "figma"
+    },
+    {
+      "id": "components",
+      "title": "Build reusable components and states",
+      "dependsOn": [
+        "foundations"
+      ],
+      "reference": "references/design-method.md",
+      "checks": [
+        "instances-verified",
+        "states-verified",
+        "layout-verified"
+      ],
+      "kind": "figma"
+    },
+    {
+      "id": "assets",
+      "title": "Generate and inspect Higgsfield assets",
+      "dependsOn": [
+        "direction"
+      ],
+      "reference": "references/higgsfield.md",
+      "checks": [
+        "assets-reviewed",
+        "provenance-recorded"
+      ],
+      "kind": "asset",
+      "allowNotApplicable": true
+    },
+    {
+      "id": "screen-landing",
+      "title": "Design Landing page",
+      "dependsOn": [
+        "components",
+        "assets"
+      ],
+      "reference": "references/platforms.md",
+      "checks": [
+        "inventory-covered",
+        "states-covered",
+        "layout-verified",
+        "assets-placed"
+      ],
+      "kind": "figma",
+      "surface": "landing",
+      "page": "10 Landing"
+    },
+    {
+      "id": "screen-web",
+      "title": "Design Web application",
+      "dependsOn": [
+        "components",
+        "assets"
+      ],
+      "reference": "references/platforms.md",
+      "checks": [
+        "inventory-covered",
+        "states-covered",
+        "layout-verified",
+        "assets-placed"
+      ],
+      "kind": "figma",
+      "surface": "web",
+      "page": "20 Web app"
+    },
+    {
+      "id": "screen-ios",
+      "title": "Design iOS app",
+      "dependsOn": [
+        "components",
+        "assets"
+      ],
+      "reference": "references/platforms.md",
+      "checks": [
+        "inventory-covered",
+        "states-covered",
+        "layout-verified",
+        "assets-placed"
+      ],
+      "kind": "figma",
+      "surface": "ios",
+      "page": "30 iOS"
+    },
+    {
+      "id": "screen-android",
+      "title": "Design Android app",
+      "dependsOn": [
+        "components",
+        "assets"
+      ],
+      "reference": "references/platforms.md",
+      "checks": [
+        "inventory-covered",
+        "states-covered",
+        "layout-verified",
+        "assets-placed"
+      ],
+      "kind": "figma",
+      "surface": "android",
+      "page": "31 Android"
+    },
+    {
+      "id": "screen-macos",
+      "title": "Design macOS app",
+      "dependsOn": [
+        "components",
+        "assets"
+      ],
+      "reference": "references/platforms.md",
+      "checks": [
+        "inventory-covered",
+        "states-covered",
+        "layout-verified",
+        "assets-placed"
+      ],
+      "kind": "figma",
+      "surface": "macos",
+      "page": "40 macOS"
+    },
+    {
+      "id": "screen-windows",
+      "title": "Design Windows app",
+      "dependsOn": [
+        "components",
+        "assets"
+      ],
+      "reference": "references/platforms.md",
+      "checks": [
+        "inventory-covered",
+        "states-covered",
+        "layout-verified",
+        "assets-placed"
+      ],
+      "kind": "figma",
+      "surface": "windows",
+      "page": "41 Windows"
+    },
+    {
+      "id": "screen-os",
+      "title": "Design Operating-system concept",
+      "dependsOn": [
+        "components",
+        "assets"
+      ],
+      "reference": "references/platforms.md",
+      "checks": [
+        "inventory-covered",
+        "states-covered",
+        "layout-verified",
+        "assets-placed"
+      ],
+      "kind": "figma",
+      "surface": "os",
+      "page": "50 OS concept"
+    },
+    {
+      "id": "prototype",
+      "title": "Wire and test key journeys",
+      "dependsOn": [
+        "screen-landing",
+        "screen-web",
+        "screen-ios",
+        "screen-android",
+        "screen-macos",
+        "screen-windows",
+        "screen-os"
+      ],
+      "reference": "references/quality.md",
+      "checks": [
+        "primary-path-tested",
+        "recovery-path-tested"
+      ],
+      "kind": "figma"
+    },
+    {
+      "id": "review",
+      "title": "Inspect, correct and confirm",
+      "dependsOn": [
+        "prototype"
+      ],
+      "reference": "references/quality.md",
+      "checks": [
+        "visual-reviewed",
+        "platform-reviewed",
+        "no-critical-issues",
+        "inventory-covered"
+      ],
+      "kind": "figma"
+    },
+    {
+      "id": "handoff",
+      "title": "Deliver navigable design and evidence",
+      "dependsOn": [
+        "review"
+      ],
+      "reference": "references/quality.md",
+      "checks": [
+        "links-recorded",
+        "limitations-recorded",
+        "deliverables-recorded"
+      ],
+      "kind": "document"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+node_modules/
+dist/
+.oh-my-figma/
+*.tgz
+.DS_Store

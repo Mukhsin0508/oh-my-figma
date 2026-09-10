@@ -1,0 +1,6 @@
+interface:
+  display_name: "Oh My Figma"
+  short_description: "Design complete products through Figma workflows"
+  default_prompt: "Use $oh-my-figma to design a coherent product in Figma with editable components, Higgsfield assets, prototypes, and verified handoff."
+policy:
+  allow_implicit_invocation: true
