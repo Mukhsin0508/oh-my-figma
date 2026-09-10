@@ -1,12 +1,28 @@
-# oh-my-figma
+<p align="center">
+  <img src="docs/media/hero.png" alt="oh-my-figma — One brief. Every screen. A single brief becomes a coherent landing page, desktop app and mobile design." width="100%" />
+</p>
 
-**One brief. A coherent product design. Built in Figma by your agent.**
+<h1 align="center">oh-my-figma</h1>
+<p align="center"><strong>Give your agent a brief. Get a whole product design in Figma.</strong></p>
+<p align="center">
+  <a href="#install-in-codex">Install in Codex</a> ·
+  <a href="#use-in-chatgpt">Use in ChatGPT</a> ·
+  <a href="#what-the-workflow-does">How it works</a> ·
+  <a href="https://github.com/Mukhsin0508/oh-my-figma/releases/latest">Download</a>
+</p>
+<p align="center">
+  <a href="LICENSE"><img alt="MIT license" src="https://img.shields.io/badge/license-MIT-17221F?style=flat-square" /></a>
+  <img alt="Seven platform playbooks" src="https://img.shields.io/badge/platforms-7-C7F464?style=flat-square&amp;labelColor=17221F" />
+  <a href="https://github.com/Mukhsin0508/oh-my-figma/actions/workflows/check.yml"><img alt="Package checks" src="https://github.com/Mukhsin0508/oh-my-figma/actions/workflows/check.yml/badge.svg" /></a>
+</p>
 
-Installable skills and workflow graphs for landing pages, web apps, iOS, Android, macOS, Windows and original OS concepts. Use Figma's web app with ChatGPT/Astra or Codex, bring in Higgsfield imagery, and apply current Impeccable guidance where available.
+Your landing page, web app, phone screens and desktop app should feel like **one product**. Oh My Figma gives ChatGPT or Codex a reusable path from the brief to the design system, screens, prototype and handoff.
 
-The agent designs. The graph keeps the work ordered and reviewable. No Python HTTP clients, API-key proxies, custom Figma server or bundled third-party skills.
+- **One visual language:** shared foundations and components across seven platform playbooks.
+- **A file you can navigate:** ordered pages, named screens, states and linked journeys.
+- **A workflow you can resume:** recorded progress, Higgsfield asset jobs and review evidence.
 
-> v0.1: skill package and local graph helper. Packaging and scheduler behavior are tested. Live Figma/Higgsfield end-to-end design execution has not yet been validated by this repository. Designs are editable Figma artifacts, not deployed or compiled applications; “money printer” is an automation ambition, not an income claim.
+Works through the Figma web app or authorized plugin tools. Bring Higgsfield for imagery and current Impeccable guidance for design craft. Third-party skills are refreshed through their supported routes on each new or resumed session.
 
 ## Install in Codex
 
@@ -34,6 +50,13 @@ Upload `oh-my-figma.zip`, enable the needed Figma/Higgsfield tools, and ask it t
 
 ## What the workflow does
 
+![From idea to handoff — Brief, Design system, Screens, Handoff](docs/media/workflow.png)
+
+<sub>Generated concept illustrations by Higgsfield. These explain the intended workflow; they are not screenshots of a completed design run. [Media kit and prompts](docs/media/README.md).</sub>
+
+<details>
+<summary>See the complete workflow graph</summary>
+
 ```mermaid
 flowchart TD
   A[Inspect host and Figma file] --> B[Refresh third-party skills]
@@ -48,6 +71,8 @@ flowchart TD
   I --> J[Inspect, correct, confirm]
   J --> K[Linked design handoff]
 ```
+
+</details>
 
 Each platform is its own graph node. The host selects only requested surfaces, keeps one Figma writer and records evidence before completing a node. Resuming does not recreate finished frames or resubmit paid generations.
 
@@ -98,6 +123,10 @@ Or clone the repository and use `node bin/oh-my-figma.mjs`. Commands:
 | `bundle <output.zip>` | Export the standalone skill; refuse overwrite |
 
 The helper makes **no network requests** and **does not execute design tools**. Evidence is an agent attestation; it cannot authenticate screenshots, external file IDs or results. [Execution and evidence format](skills/oh-my-figma/references/execution.md).
+
+## Project status
+
+**v0.1 is an installable skill package and local graph helper.** Installation, packaging and scheduler behavior are tested. Live Figma/Higgsfield design execution still needs its first end-to-end validation. The deliverables are designs and prototypes, not deployed websites or compiled applications.
 
 ## Develop and verify
 
