@@ -1,0 +1,29 @@
+{
+  "provider": "Higgsfield MCP",
+  "requestedModel": "nano_banana_pro",
+  "actualModel": "nano_banana_2",
+  "date": "2026-09-10",
+  "description": "Original concept illustrations for README, not actual product screenshots",
+  "assets": [
+    {
+      "index": 0,
+      "job_id": "da6d2aa5-469b-4162-8d01-b971009076f8",
+      "path": "hero.png",
+      "prompt": "Create a finished premium GitHub README editorial graphic for the open-source project oh-my-figma. Landscape 16:9. Visual identity: warm ivory #F4F1E8 background, deep ink #17221F typography, vivid chartreuse #C7F464 accents, fine precise charcoal rules, crisp editorial Swiss typography with large readable text. Sophisticated tactile 3D paper/UI-card collage, straight-on/very slight perspective, restrained soft shadows. Original shapes, no Figma corporate logo or other company logos, no watermarks. Extremely clear information hierarchy and generous margins. Only render the exact text explicitly requested. No tiny illegible copy, no gibberish UI text. These are conceptual explanatory illustrations, not real app screenshots. HERO BANNER: Upper-left small monospaced wordmark 'oh-my-figma'. Large dominant two-line headline across left half: 'One brief.' then 'Every screen.' Below: 'Your agent. Your Figma. One coherent product.' Right half and lower third show ONE small brief card flowing through a lime branching connector into a clean coherent group of three polished design canvases: a tall landing page, a wide desktop app window, and a phone interface. All canvases share the same ink/ivory/lime design system. Use abstract image areas and well-composed UI geometry rather than fake text. A small lime pill above the cluster says 'SKILLS + WORKFLOWS'. Bottom left small but readable text: 'Web \u00b7 Mobile \u00b7 Desktop'. Bottom right tiny text 'Concept illustration'. Make the headline unmistakable at 800px display width. Balanced high-end launch graphic, charming yet technical.",
+      "width": 2752,
+      "height": 1536,
+      "sha256": "86f744bbde0ab02aa9e28bbf77cf5df9083cccf65cf3090daea630b1fa533ea1",
+      "status": "completed"
+    },
+    {
+      "index": 1,
+      "job_id": "75a1ffab-afe6-4ad3-aaff-42ce9c8f2ef0",
+      "path": "workflow.png",
+      "prompt": "Create a finished premium GitHub README editorial graphic for the open-source project oh-my-figma. Landscape 16:9. Visual identity: warm ivory #F4F1E8 background, deep ink #17221F typography, vivid chartreuse #C7F464 accents, fine precise charcoal rules, crisp editorial Swiss typography with large readable text. Sophisticated tactile 3D paper/UI-card collage, straight-on/very slight perspective, restrained soft shadows. Original shapes, no Figma corporate logo or other company logos, no watermarks. Extremely clear information hierarchy and generous margins. Only render the exact text explicitly requested. No tiny illegible copy, no gibberish UI text. These are conceptual explanatory illustrations, not real app screenshots. EXPLAINER GRAPHIC: Upper-left small monospaced 'oh-my-figma'. Main headline 'From idea to handoff.' Under it 'A clear path through Figma.' In the middle, four large numbered editorial cards in a horizontal connected sequence with chartreuse arrows: '01' and 'Brief' with a simple document symbol; '02' and 'Design system' with color swatches, type lines and reusable button components; '03' and 'Screens' with web and phone canvases; '04' and 'Handoff' with orderly pages, a link symbol and a checkmark. Each card has plentiful breathing room, consistent proportions and fully readable labels. Bottom full-width thin charcoal rule and a single line 'Plan \u2192 Create \u2192 Review \u2192 Deliver'. Tiny lower-right 'Concept illustration'. Keep layout simple and easily understood in three seconds. No additional text.",
+      "width": 2752,
+      "height": 1536,
+      "sha256": "039e5f7b68fa8861cbcaedd973af5a1c2da15d8aef4203ffb3a3e9f8c8075409",
+      "status": "completed"
+    }
+  ]
+}
